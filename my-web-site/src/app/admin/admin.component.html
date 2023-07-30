@@ -1,0 +1,105 @@
+<button mat-raised-button color="warn" [routerLink]="['/']">Main</button>
+<mat-card>
+  <form (submit)="onSaveCard(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        tpye="text"
+        name="order"
+        [ngModel]="card?.order"
+        placeholder="Order"
+        #title="ngModel"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        tpye="text"
+        name="title"
+        [ngModel]="card?.title"
+        required
+        placeholder="Post Title"
+        minlength="3"
+        #title="ngModel"
+      />
+      <mat-error *ngIf="title.invalid"> Please enter a title </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea
+        matInput
+        rows="1"
+        name="description"
+        [ngModel]="card?.description"
+        required
+        placeholder="Post Content"
+        #content="ngModel"
+      ></textarea>
+      <mat-error *ngIf="content.invalid"> Please enter a content </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        tpye="text"
+        name="extras"
+        [ngModel]="card?.extras"
+        placeholder="Extras"
+        #title="ngModel"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        tpye="text"
+        name="continueUrl"
+        [ngModel]="card?.continueUrl"
+        placeholder="Continue Url"
+        #title="ngModel"
+      />
+    </mat-form-field>
+    <br />
+    <button mat-raised-button color="primary" type="submit">
+      {{ this.mode }}
+    </button>
+  </form>
+</mat-card>
+
+<table mat-table [dataSource]="cards" class="mat-elevation-z8">
+  <ng-container matColumnDef="order">
+    <th mat-header-cell *matHeaderCellDef>Order</th>
+    <td mat-cell *matCellDef="let element">{{ element.order }}</td>
+  </ng-container>
+  <ng-container matColumnDef="title">
+    <th mat-header-cell *matHeaderCellDef>Title</th>
+    <td mat-cell *matCellDef="let element">{{ element.title }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef>Description</th>
+    <td mat-cell *matCellDef="let element">{{ element.description }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="continueUrl">
+    <th mat-header-cell *matHeaderCellDef>Continue Url</th>
+    <td mat-cell *matCellDef="let element">{{ element.continueUrl }}</td>
+  </ng-container>
+
+  <ng-container matColumnDef="extras">
+    <th mat-header-cell *matHeaderCellDef>Extras</th>
+    <td mat-cell *matCellDef="let element">{{ element.extras }}</td>
+  </ng-container>
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef>ID</th>
+    <td mat-cell *matCellDef="let element">
+      {{ element.id }}
+      <br />
+      <button mat-button color="warn" (click)="onEdit(element.id)">EDIT</button>
+      <button mat-button color="warn" (click)="onDelete(element.id)">
+        DELETE
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>
+

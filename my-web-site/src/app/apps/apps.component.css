@@ -1,0 +1,44 @@
+.container {
+  margin-right: 10%;
+}
+.card {
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: 5%;
+  backface-visibility: hidden;
+  box-shadow: none;
+  text-align: left;
+  border-radius: 10px; /* Yuvarlatılmış köşeler */
+  box-shadow: none; /* Gölgeleri kapalı */
+  transition: 0.5s;
+}
+.card-text {
+  margin-left: 1rem;
+  white-space: pre-line;
+}
+.card-title {
+  color: white;
+  margin-left: 1rem;
+  cursor: default;
+}
+.card:hover {
+  .card-title {
+    color:turquoise;
+  }
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.035);
+}
+mat-chip-option {
+  margin-left: 2%;
+  cursor: pointer;
+}
+mat-chip-option:hover{
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.card-body p {
+  color: lightslategray;
+}
