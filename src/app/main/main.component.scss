@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*#region Left side Description*/
+
+.left-description p {
+  font-size: 1rem;
+  font-style: italic;
+  color: lightslategray;
+}
+
+span.ergul-ferik a {
+  text-decoration: none;
+  font-weight: 0, 800;
+  color: white;
+}
+
+.middle-description p {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  max-width: 50vh;
+  overflow: hidden;
+}
+
+/*#endregion Left side Description*/
+
+/*#region Right Side*/
+
+.contents {
+  color: white;
+  text-align: center;
+}
+
+.contents h1 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.contents p {
+  color: white;
+}
+
+/*#region Cards*/
+
+
+.card-body p {
+  color: lightslategray;
+}
+
+.card-wrapper {
+  display: flex;
+}
+
+.time {
+  padding-left: 1rem;
+  min-width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card {
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+
+
+.card-text {
+  cursor: pointer;
+  white-space: pre-line;
+  padding-left: 1rem;
+
+
+}
+
+.card-title {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  width: fit-content;
+}
+
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+}
+
+.title-link-icon {
+  transition: all 0.3s ease;
+  margin-left: 8px;
+  width: 0.8rem;
+  display: inline-flex;
+}
+
+
+
+/*#endregion Cards*/
+
+/*#region About Me*/
+.about-me p {
+  color: lightslategray;
+  font-style: normal;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.bold {
+  color: white;
+}
+
+/*#endregion About Me*/
+
+/*#region extras*/
+mat-chip-option {
+  margin-left: 2%;
+  margin-bottom: 2%;
+  opacity: 0.4;
+}
+
+/*#endregion extras*/
+
+/*#region Contact*/
+
+.contact a {
+  color: lightslategray;
+  margin-right: 8%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+/*#endregion Contact*/
+
+/*#endregion Right Side*/
+
+@media (min-width:1150px) {
+
+  body {
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+  .contents {
+    margin-top: 8%;
+    margin-left: 50%;
+    margin-right: 15%;
+    flex-direction: row;
+  }
+
+  .contact {
+    margin-bottom: 3rem;
+  }
+
+  .sidebar {
+    margin-top: 8%;
+    margin-left: 20%;
+    margin-right: 50%;
+    width: 300px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: -webkit-fill-available;
+  }
+
+
+  .sidebar-link-wrapper {
+    padding-inline-start: 0;
+    margin-top: 3rem;
+  }
+
+  .sidebar-link {
+    transition: all 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    /* Çizgi ve metin arasına boşluk ekler */
+    display: block;
+    color: lightslategray;
+    text-decoration: none;
+    margin: 10px 0;
+    /* İsteğe bağlı: bağlantılar arasına boşluk ekler */
+    width: max-content;
+  }
+
+  .sidebar-link::before {
+    transition: all 0.3s ease;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: lightslategray;
+    /* Çizginin rengi */
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Çizgiyi ortalar */
+  }
+
+  .sidebar-link.active-section {
+    padding-left: 70px;
+    color: white;
+    /* Aktif bölüm yazı rengi */
+  }
+
+  .sidebar-link.active-section::before {
+    background-color: white;
+    /* Aktif bölüm yazı rengi */
+    width: 60px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .not-hovered {
+    opacity: 0.6;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card:hover {
+    opacity: 1;
+
+    .card-title {
+      color: turquoise;
+      text-shadow: 0px 2px 4px black;
+
+      .title-link-icon {
+        width: 1rem;
+      }
+    }
+
+    mat-chip-option {
+      opacity: 0.8;
+      background-color: turquoise !important;
+
+      .chip-text {
+        color: white !important;
+        text-shadow: 0px 2px 4px black;
+      }
+    }
+
+    box-shadow: 10rem;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(180, 180, 255, 0.04);
+    border-radius: 10px;
+  }
+
+  .card-bottom.experience {
+    margin-left: 82px;
+  }
+}
+
+@media (max-width:1149px) {
+
+  .exp-header, .app-header{
+    margin-right: 10%;
+  }
+
+  body {
+    margin-left: 9%;
+    margin-top: 2%;
+    padding-bottom: 2rem;
+  }
+
+  .about-me {
+    margin-right: 10%;
+  }
+
+  .about-me p {
+    padding-left: 0;
+  }
+
+  .ergul-ferik {
+    width: 80%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 20%;
+  }
+
+  .sidebar {
+    display: flex;
+    margin-top: 3rem;
+    padding-left: 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contents {
+    margin-top: 3rem;
+  }
+
+  .card {
+    margin-right: 15%;
+    width: 90%;
+
+    .card-title {
+      color: turquoise;
+
+      .title-link-icon {
+        width: 1rem;
+      }
+    }
+
+    mat-chip-option {
+      opacity: 0.8;
+      background-color: turquoise !important;
+
+      .chip-text {
+        color: white !important;
+        text-shadow: 0px 2px 4px black;
+      }
+    }
+
+    box-shadow: 10rem;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(180, 180, 255, 0.04);
+    border-radius: 10px;
+  }
+
+  .card-bottom.experience {
+    margin-left: 75px
+  }
+}
+
+
+.pointer-cursor {
+  cursor: pointer;
+}
+
+.default-cursor {
+  cursor: default;
+}
