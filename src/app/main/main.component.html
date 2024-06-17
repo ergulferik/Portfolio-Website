@@ -2,7 +2,9 @@
 
 <div class="language-wrapper button-cover">
   <div class="button r" id="language-button">
-    <input type="checkbox" class="checkbox"  (change)="changeLanguage(selectedLanguage === 'EN' ? 'TR' : 'EN')" [checked]="selectedLanguage === 'TR'"  />
+    <input type="checkbox" class="checkbox"
+      (change)="changeLanguage(selectedLanguage === 'EN' ? 'TR' : 'EN')"
+      [checked]="selectedLanguage === 'TR'" />
     <div class="knobs"></div>
     <div class="layer"></div>
   </div>
@@ -19,25 +21,24 @@
 
       </h1>
       <h2 class="middle-description">
-        <p>Computer Engineer</p>
+        <p>{{selectedLanguage == 'EN' ? 'Computer Engineer' :
+          'Bilgisayar Mühendisi' }}</p>
       </h2>
       <div class="left-description">
         <p>
-          I am a person who is open to development and always willing to
-          learn. You're on the website I've set up to try and post what I've
-          learned.
+          {{aboutMeShort}}
         </p>
       </div>
       <ul class="sidebar-link-wrapper" *ngIf="!isMobile">
         <li class="sidebar-link"
           [ngClass]="{'active-section': activeSection === 'about-me'}"
-          (click)="scrollTo('about-me')">About Me</li>
+          (click)="scrollTo('about-me')">{{sections.aboutMe}}</li>
         <li class="sidebar-link"
           [ngClass]="{'active-section': activeSection === 'experience'}"
-          (click)="scrollTo('experience')">Experience</li>
+          (click)="scrollTo('experience')">{{sections.experience}}</li>
         <li class="sidebar-link"
           [ngClass]="{'active-section': activeSection === 'apps'}"
-          (click)="scrollTo('apps')">Apps</li>
+          (click)="scrollTo('apps')">{{sections.projects}}</li>
 
       </ul>
     </span>
@@ -136,40 +137,15 @@
   <div class="contents">
     <section id="about-me" class="content section">
       <div class="about-me">
-        <h1>About Me</h1>
-        <p>
-          My name is Ergül. I was born on April 22, 2001, in Bursa. In 2019,
-          I commenced my undergraduate education in the field of<strong
-            class="bold">
-            Computer Engineering at Manisa Celal Bayar University
-          </strong>in Turkey.
-        </p>
-        <br />
-        <p>
-          Over the course of my academic journey, I actively participated in
-          various communities and clubs, thereby enhancing my interpersonal
-          skills. I possess the firm belief that I can readily grasp a wide
-          array of knowledge pertaining to computer-related disciplines. My
-          passion for learning remains unwavering, and
-          <strong class="bold">
-            diligently strive to acquire new skills on a daily
-            basis.</strong>
-        </p>
-        <br />
-        <p>
-          I am proficient in
-          <strong class="bold">.NET, Python, and Java</strong> programming
-          languages. Additionally, I am gradually developing my skills in
-          the<strong class="bold"> "MEAN"</strong>
-          framework, which I am currently learning and experimenting with,
-          as evidenced by the creation of this website.
-        </p>
+        <h1>{{sections.aboutMe}}</h1>
+        <p [innerHTML]="aboutMe"></p>
+
       </div>
     </section>
     <br />
 
     <section id="experience" class="content section">
-      <h1 class="exp-header">Experience</h1>
+      <h1 class="exp-header">{{sections.experience}}</h1>
       <div *ngFor="let card of experienceCards"
         [ngClass]="{ 'pointer-cursor': isCardOpen, 'default-cursor': !isCardOpen }">
         <br />
@@ -234,7 +210,7 @@
     </section>
     <br>
     <section id="apps" class="content section">
-      <h1 class="app-header">Projects</h1>
+      <h1 class="app-header">{{sections.projects}}</h1>
       <div *ngFor="let card of projectCards"
         [ngClass]="{ 'pointer-cursor': isCardOpen, 'default-cursor': !isCardOpen }">
         <br />
@@ -274,7 +250,7 @@
               </ng-template>
               <div class="card-bottom"
                 (click)="cardClick(card.id, card.continueUrl, card.description)">
-                <mat-chip-option class="custom-chip"
+                <mat-chip-option [disabled]="true" class="custom-chip"
                   *ngFor="let extra of card.extras">
                   <div class="chip-text">{{extra}}</div>
                 </mat-chip-option>

@@ -7,3 +7,27 @@ body {
   letter-spacing: 1px;
   background-color: rgb(15, 23, 42)
 }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(15, 23, 42); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(34, 54, 100); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(23, 37, 68); 
+}
+
+
+strong {
+  color: white;
+}
