@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { ExperienceCards, ProjectCard } from '../cards.model';
 import { cards, experienceData } from '../data/cardDatas';
+import { LocalStorageService } from '../local-storage.service';
 
 @Component({
   selector: 'app-main',
@@ -20,6 +21,11 @@ export class MainComponent implements OnInit {
   isCardOpen = false;
   interruptCardAnimation = false;
   openCardId = '';
+  selectedLanguage: 'TR' | 'EN' = 'EN'
+
+  constructor(private localStorageService: LocalStorageService) {
+
+  }
 
   ngOnInit() {
     this.projectCards = cards
@@ -31,6 +37,19 @@ export class MainComponent implements OnInit {
     } else {
       this.isMobile = false;
     }
+
+    const savedLanguage = this.localStorageService.getItem('selectedLanguage');
+    if (savedLanguage) {
+      this.selectedLanguage = savedLanguage as 'TR' | 'EN';
+    } else {
+      this.selectedLanguage = 'EN';
+      this.localStorageService.setItem('selectedLanguage', this.selectedLanguage);
+    }
+  }
+
+  changeLanguage(language: 'TR' | 'EN') {
+    this.selectedLanguage = language;
+    this.localStorageService.setItem('selectedLanguage', language);
   }
 
   cardClick(id: any, url: string, description: string) {
@@ -118,28 +137,28 @@ export class MainComponent implements OnInit {
       window.open(card.continueUrl)
     }
   }
-  
+
   @HostListener('window:scroll', [])
   onScroll(): void {
     const sections = document.querySelectorAll('.section');
     let currentSection = '';
-  
+
     sections.forEach(section => {
       const sectionTop = section.getBoundingClientRect().top;
       const sectionHeight = section.clientHeight;
       const sectionBottom = sectionTop + sectionHeight;
-  
+
       if (sectionTop <= window.innerHeight / 2 && sectionBottom > window.innerHeight / 2) {
         currentSection = section.getAttribute('id') || '';
       }
     });
-  
+
     if (!currentSection && window.scrollY < window.innerHeight / 2) {
       currentSection = sections[0]?.getAttribute('id') || '';
     }
     this.activeSection = currentSection;
   }
-  
+
   scrollTo(section: string) {
     if (section === 'about-me') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -151,6 +170,4 @@ export class MainComponent implements OnInit {
     }
     this.activeSection = section;
   }
-  
-
 }
