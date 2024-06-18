@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
-  title = 'my-web-site';
+  title = 'Ergül Ferik';
   isMobile:boolean = false
   ngOnInit(): void {
     const userAgent = navigator.userAgent || navigator.vendor;
