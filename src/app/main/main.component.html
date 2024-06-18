@@ -198,10 +198,9 @@
 
               <div class="card-bottom experience"
                 (click)="cardClick(card.id, card.continueUrl, card.description)">
-                <mat-chip-option class="custom-chip"
-                  *ngFor="let extra of card.extras">
-                  <div class="chip-text">{{extra}}</div>
-                </mat-chip-option>
+                <div *ngFor="let extra of card.extras" class="extras-chip">
+                  {{extra}}
+                </div>
               </div>
             </div>
           </div>
@@ -250,10 +249,9 @@
               </ng-template>
               <div class="card-bottom"
                 (click)="cardClick(card.id, card.continueUrl, card.description)">
-                <mat-chip-option [disabled]="true" class="custom-chip"
-                  *ngFor="let extra of card.extras">
-                  <div class="chip-text">{{extra}}</div>
-                </mat-chip-option>
+                <div *ngFor="let extra of card.extras" class="extras-chip">
+                  {{extra}}
+                </div>
               </div>
             </div>
           </div>
