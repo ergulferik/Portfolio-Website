@@ -21,6 +21,7 @@ span.ergul-ferik a {
 
 .middle-description p {
   text-decoration: none;
+  line-height: 3.5rem;
   font-weight: bold;
   font-style: italic;
   color: white;
@@ -63,6 +64,16 @@ span.ergul-ferik a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+
+  .time-placeholder{
+    height: 100%;
+    width: 2px;
+    background: #778899;
+    background: linear-gradient(0deg, rgba(119,136,153,0) 0%, rgba(119,136,144,1) 100%);
+    align-self: center;
+    opacity: 0.8;
+  }
 }
 
 .card {
@@ -93,10 +104,10 @@ span.ergul-ferik a {
   display: block;
   align-items: center;
   overflow: auto;
-  padding-left: 1rem;
-
+  margin-bottom: 1rem;
   .extras-chip{
-    margin:5px ;
+    margin:5px 10px 5px 0px ;
+    
     display: inline-block;
     width: max-content;
     background-color: #656a78;
@@ -104,10 +115,6 @@ span.ergul-ferik a {
     padding:5px 10px 5px 10px ;
     opacity: 0.4;
     transition: all 0.3s ease;
-
-    &:first-child{
-      margin-left: 0;
-    }
   }
 }
 
@@ -116,6 +123,7 @@ span.ergul-ferik a {
   margin-left: 8px;
   width: 0.8rem;
   display: inline-flex;
+  margin-right: 1rem;
 }
 
 
@@ -272,6 +280,10 @@ span.ergul-ferik a {
     border-radius: 10px;
   }
 
+  .card-bottom{
+    padding-left: 1rem;
+  }
+
   .card-bottom.experience {
     margin-left: 72px;
   }
@@ -314,6 +326,7 @@ span.ergul-ferik a {
     flex-direction: column;
     margin-right: 10%;
     margin-left: 20%;
+    line-height: 2rem;
   }
 
   .sidebar {
