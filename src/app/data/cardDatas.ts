@@ -4,7 +4,7 @@ const cardsTR: ProjectCard[] = [
   {
     "title": "Angular UI kit ve Datatable Paketi",
     "description": "Angular ile geliştiriciler için web uygulamalarında kullanılmak üzere kapsamlı ve kullanımı kolay bir UI ve Datatable elementleri sağlayan bir npm paketi oluşturdum. Bu paket, geliştiricilerin projelerinde hızlı ve tutarlı bir şekilde kullanıcı arayüzü oluşturmalarına olanak tanır. Paket içerisinde, çeşitli UI bileşenleri, formlar, butonlar, modallar ve tablolara ek olarak, veri yönetimini kolaylaştıran dinamik datatable bileşenleri yer almaktadır. Geliştiricilerin paketi kolayca entegre edebilmesi ve kullanabilmesi için kapsamlı bir web dökümanı da hazırladım. Bu döküman, adım adım kurulum talimatları, örnek kodlar ve kullanıcının ihtiyaç duyabileceği tüm bilgileri içermektedir. Ayrıca, paket sürekli olarak güncellenmekte ve yeni özellikler eklenmektedir.",
-    "extras": ["Angular", "npm", "UI kit", "Datatable"],
+    "extras": ["Angular", "Npm", "UI kit", "Datatable"],
     "id": "project1",
     "continueUrl": "https://github.com/skarahan35/darkchicken",
     "order": "1"
@@ -12,7 +12,7 @@ const cardsTR: ProjectCard[] = [
   {
     "title": "Angular Toast Paketi",
     "description": "Angular frameworkü ile geliştiriciler için web uygulamalarında kullanılmak üzere oluşturduğum bu npm paketi, kullanıcı bildirimleri ve geri bildirim mesajları için özelleştirilebilir toast bileşenleri sağlar. Paketin içerisinde, farklı durumlar için önceden tanımlanmış toast stilleri (başarı, hata, bilgi, uyarı) bulunmakta ve kullanıcıların bu toast bileşenlerini ihtiyaçlarına göre özelleştirebilmesi mümkündür. Geliştiricilerin bu paketi projelerine entegre edebilmesi ve kullanabilmesi için detaylı bir web dökümanı hazırladım. Bu döküman, adım adım kurulum ve kullanım talimatları, örnek uygulamalar ve sık karşılaşılan sorunlar için çözümler içermektedir. Paket, kullanıcı deneyimini iyileştirmek ve uygulamaların daha profesyonel görünmesini sağlamak amacıyla sürekli olarak güncellenmekte ve geliştirilmekte.",
-    "extras": ["Angular", "npm", "Toast"],
+    "extras": ["Angular", "Npm", "Toast"],
     "id": "project2",
     "continueUrl": "https://www.npmjs.com/package/dc-toast-ng",
     "order": "2"
@@ -55,7 +55,7 @@ const cardsEN = [
   {
     "title": "Angular UI Kit and Datatable Package",
     "description": "I created a comprehensive and easy-to-use npm package that provides UI and Datatable elements for developers to use in their web applications with Angular. This package allows developers to build user interfaces quickly and consistently in their projects. The package includes various UI components, forms, buttons, modals, and tables, as well as dynamic datatable components to facilitate data management. I also prepared extensive web documentation to help developers easily integrate and use the package. This documentation includes step-by-step installation instructions, example codes, and all the information a user might need. Additionally, the package is constantly updated and new features are added.",
-    "extras": ["Angular", "npm", "UI kit", "Datatable"],
+    "extras": ["Angular", "Npm", "UI kit", "Datatable"],
     "id": "project1",
     "continueUrl": "https://github.com/skarahan35/darkchicken",
     "order": "1"
@@ -63,7 +63,7 @@ const cardsEN = [
   {
     "title": "Angular Toast Package",
     "description": "This npm package, created with the Angular framework, provides customizable toast components for user notifications and feedback messages in web applications. The package includes predefined toast styles for different situations (success, error, info, warning) and allows users to customize these toast components according to their needs. I prepared detailed web documentation for developers to easily integrate and use this package in their projects. This documentation includes step-by-step installation and usage instructions, example applications, and solutions for common issues. The package is constantly updated and developed to improve user experience and make applications look more professional.",
-    "extras": ["Angular", "npm", "Toast"],
+    "extras": ["Angular", "Npm", "Toast"],
     "id": "project2",
     "continueUrl": "https://www.npmjs.com/package/dc-toast-ng",
     "order": "2"
