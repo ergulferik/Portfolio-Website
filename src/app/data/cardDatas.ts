@@ -2,7 +2,7 @@ import { ExperienceCards, ProjectCard } from "../cards.model";
 
 const cardsTR: ProjectCard[] = [
   {
-    "title": "DarkChicen",
+    "title": "DarkChicken",
     "description": "Angular ile geliştiriciler için web uygulamalarında kullanılmak üzere kapsamlı ve kullanımı kolay bir UI ve Datatable elementleri sağlayan bir npm paketi oluşturdum. Bu paket, geliştiricilerin projelerinde hızlı ve tutarlı bir şekilde kullanıcı arayüzü oluşturmalarına olanak tanır. Paket içerisinde, çeşitli UI bileşenleri, formlar, butonlar, modallar ve tablolara ek olarak, veri yönetimini kolaylaştıran dinamik datatable bileşenleri yer almaktadır. Geliştiricilerin paketi kolayca entegre edebilmesi ve kullanabilmesi için kapsamlı bir web dökümanı da hazırladım. Bu döküman, adım adım kurulum talimatları, örnek kodlar ve kullanıcının ihtiyaç duyabileceği tüm bilgileri içermektedir. Ayrıca, paket sürekli olarak güncellenmekte ve yeni özellikler eklenmektedir.",
     "extras": ["Angular", "Npm", "UI kit", "Datatable", "JavaScript", "HTML", "CSS"],
     "id": "project1",
