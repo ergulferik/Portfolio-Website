@@ -65,15 +65,15 @@ To download the project to your local machine, you can follow these steps:
 1. Clone this repository:
    ```bash
    git clone https://github.com/ergulferik/Portfolio-Website.git
-2. Navigate to the project directory:
-
+   
+  Navigate to the project directory:
 
     cd Portfolio-Website
-3. Install the necessary dependencies:
+  Install the necessary dependencies:
 
 
     npm install
-4. Start the project:
+  Start the project:
 
     ng serve
 ## Contact
