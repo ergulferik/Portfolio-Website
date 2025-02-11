@@ -2,12 +2,36 @@ import { ExperienceCards, ProjectCard } from "../cards.model";
 
 const cardsTR: ProjectCard[] = [
   {
+    "title": "Angulogic - Sidebar",
+    "description": "@angulogic/ng-sidebar, Angular uygulamaları için geliştirilen, dinamik, etkileşimli ve yüksek düzeyde özelleştirilebilir bir kenar çubuğu bileşenidir. Kullanıcı deneyimini geliştirmek amacıyla iç içe geçmiş menüler, arama fonksiyonelliği, favori yönetimi, tema değiştirme, duyarlı (responsive) görüntüleme modları ve yeniden boyutlandırılabilir / otomatik konumlandırılabilir yapı gibi gelişmiş özellikler sunmaktadır.",
+    "extras": ["Angular", "Npm", "UI/UX", "Responsive Design", "CSS"],
+    "id": "project7",
+    "continueUrl": "https://github.com/skarahan35/angulogic",
+    "order": "1"
+  },
+  {
+    "title": "Wave",
+    "description": "Bu proje, web sayfası üzerindeki fare hareketlerini ve tıklamalarını gerçek zamanlı olarak takip eden bir sistem sunmaktadır. Backend için NestJS, frontend için Angular kullanılarak geliştirilmiş olan sistem, WebSocket protokolü aracılığıyla veri aktarımı yaparak kullanıcı arayüzünün anlık güncellenmesini sağlamaktadır.",
+    "extras": ["Angular", "NestJS", "WebSocket", "Real-time Tracking"],
+    "id": "project8",
+    "continueUrl": "https://github.com/ergulferik/wave",
+    "order": "2"
+  },
+  {
+    "title": "Spy",
+    "description": "\"Casus Kim?\" sosyal etkileşim ve stratejik düşünmeyi birleştiren, arkadaş grupları için tasarlanmış bir mobil kelime oyunudur. Oyunculara belirli kelimeler atanır ve içlerinden biri rastgele olarak casus seçilir. Casusun kim olduğunu bulmak için oyuncular birbirleriyle iletişim kurarak stratejik tahminlerde bulunur.",
+    "extras": ["Angular", "Ionic", "Web", "Mobile", "State Management"],
+    "continueUrl":"https://ergulferik.github.io/spy/",
+    "id": "project9",
+    "order": "3"
+  },
+  {
     "title": "DarkChicken",
     "description": "Angular ile geliştiriciler için web uygulamalarında kullanılmak üzere kapsamlı ve kullanımı kolay bir UI ve Datatable elementleri sağlayan bir npm paketi oluşturdum. Bu paket, geliştiricilerin projelerinde hızlı ve tutarlı bir şekilde kullanıcı arayüzü oluşturmalarına olanak tanır. Paket içerisinde, çeşitli UI bileşenleri, formlar, butonlar, modallar ve tablolara ek olarak, veri yönetimini kolaylaştıran dinamik datatable bileşenleri yer almaktadır. Geliştiricilerin paketi kolayca entegre edebilmesi ve kullanabilmesi için kapsamlı bir web dökümanı da hazırladım. Bu döküman, adım adım kurulum talimatları, örnek kodlar ve kullanıcının ihtiyaç duyabileceği tüm bilgileri içermektedir. Ayrıca, paket sürekli olarak güncellenmekte ve yeni özellikler eklenmektedir.",
     "extras": ["Angular", "Npm", "UI kit", "Datatable", "JavaScript", "HTML", "CSS"],
     "id": "project1",
     "continueUrl": "https://github.com/skarahan35/darkchicken",
-    "order": "1"
+    "order": "4"
   },
   {
     "title": "DC Toast",
@@ -15,7 +39,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Angular", "Npm", "JavaScript", "HTML", "CSS"],
     "id": "project2",
     "continueUrl": "https://www.npmjs.com/package/dc-toast-ng",
-    "order": "2"
+    "order": "5"
   },
   {
     "title": "AllScan",
@@ -23,7 +47,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["JavaScript", "HTML", "CSS", "Python", "FastAPI", "BeautifulSoup"],
     "id": "project3",
     "continueUrl": "https://github.com/ergulferik/All-Scan",
-    "order": "3"
+    "order": "6"
   },
   {
     "title": "Kütüphane Yönetim Uygulaması",
@@ -31,7 +55,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Angular", "HTML", "CSS", "JavaScript", "NGX", "C#", "ABP Framework"],
     "id": "project4",
     "continueUrl": "https://github.com/ergulferik/Virtual-Shelf-Browser",
-    "order": "4"
+    "order": "7"
   },
   {
     "title": "Apartman Yönetim Uygulaması",
@@ -39,7 +63,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["C#", ".NET Core", "WebSocket", "TCP/IP", "MVC"],
     "id": "project5",
     "continueUrl": "https://github.com/ergulferik/Apartment-Management-System",
-    "order": "5"
+    "order": "8"
   },
   {
     "title": "Web Sayfası Tercüme Uygulaması",
@@ -47,18 +71,42 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Python", "Selenium", "BeautifulSoup", "Pandas", "Örümcek Mimarisi"],
     "id": "project6",
     "continueUrl": "https://github.com/ergulferik/Website-Translator",
-    "order": "6"
+    "order": "9"
   }
 ]
 
 const cardsEN = [
+  {
+    "title": "Angulogic - Sidebar",
+    "description": "@angulogic/ng-sidebar is a dynamic, interactive, and highly customizable sidebar component developed for Angular applications. It enhances user experience by offering advanced features such as nested menus, search functionality, favorite management, theme switching, responsive display modes, and resizable/auto-positioning structures.",
+    "extras": ["Angular", "Npm", "UI/UX", "Responsive Design", "CSS"],
+    "id": "project7",
+    "continueUrl": "https://github.com/skarahan35/angulogic",
+    "order": "1"
+  },
+  {
+    "title": "Wave",
+    "description": "This project provides a system that tracks mouse movements and clicks on a web page in real-time. The system is developed using Angular for the frontend and NestJS for the backend, utilizing the WebSocket protocol for data transmission to ensure instant UI updates.",
+    "extras": ["Angular", "NestJS", "WebSocket", "Real-time Tracking"],
+    "id": "project8",
+    "continueUrl": "https://github.com/ergulferik/wave",
+    "order": "2"
+  },
+  {
+    "title": "Spy",
+    "description": "\"Who's the Spy?\" is a mobile word game designed for friend groups, combining social interaction and strategic thinking. Each player is assigned a specific word, with one random player selected as the spy. Players must communicate and use strategic guessing to identify the spy.",
+    "extras": ["Angular", "Ionic", "Web", "Mobile", "State Management"],
+    "continueUrl":"https://ergulferik.github.io/spy/",
+    "id": "project9",
+    "order": "3"
+  },
   {
     "title": "DarkChicken",
     "description": "I created a comprehensive and easy-to-use npm package that provides UI and Datatable elements for developers to use in their web applications with Angular. This package allows developers to build user interfaces quickly and consistently in their projects. The package includes various UI components, forms, buttons, modals, and tables, as well as dynamic datatable components to facilitate data management. I also prepared extensive web documentation to help developers easily integrate and use the package. This documentation includes step-by-step installation instructions, example codes, and all the information a user might need. Additionally, the package is constantly updated and new features are added.",
     "extras": ["Angular", "Npm", "UI kit", "Datatable", "JavaScript", "HTML", "CSS"],
     "id": "project1",
     "continueUrl": "https://github.com/skarahan35/darkchicken",
-    "order": "1"
+    "order": "4"
   },
   {
     "title": "DC Toast",
@@ -66,7 +114,7 @@ const cardsEN = [
     "extras": ["Angular", "Npm", "JavaScript", "HTML", "CSS"],
     "id": "project2",
     "continueUrl": "https://www.npmjs.com/package/dc-toast-ng",
-    "order": "2"
+    "order": "5"
   },
   {
     "title": "AllScan",
@@ -74,7 +122,7 @@ const cardsEN = [
     "extras": ["JavaScript", "HTML", "CSS", "Python", "FastAPI", "BeautifulSoup"],
     "id": "project3",
     "continueUrl": "https://github.com/ergulferik/All-Scan",
-    "order": "3"
+    "order": "6"
   },
   {
     "title": "Virtual Shelf Browser",
@@ -82,7 +130,7 @@ const cardsEN = [
     "extras": ["Angular", "HTML", "CSS", "JavaScript", "NGX", "C#", "ABP Framework", "MSSQL"],
     "id": "project4",
     "continueUrl": "https://github.com/ergulferik/Virtual-Shelf-Browser",
-    "order": "4"
+    "order": "7"
   },
   {
     "title": "Apartment Management Application",
@@ -90,7 +138,7 @@ const cardsEN = [
     "extras": ["C#", ".NET Core", "WebSocket", "TCP/IP", "MVC"],
     "id": "project5",
     "continueUrl": "https://github.com/ergulferik/Apartment-Management-System",
-    "order": "5"
+    "order": "8"
   },
   {
     "title": "Website Translation Application",
@@ -98,12 +146,23 @@ const cardsEN = [
     "extras": ["Python", "Selenium", "BeautifulSoup", "Pandas", "Spider Architecture"],
     "id": "project6",
     "continueUrl": "https://github.com/ergulferik/Website-Translator",
-    "order": "6"
+    "order": "9"
   }
 ];
 
 
 const experienceDataTR: ExperienceCards[] = [
+  {
+    "title": "Önyüz Geliştirici",
+    "description": "Kerzz POS'ta Angular ve Ionic kullanarak web ve mobil uygulamalar geliştirdim. NgRx ile durum yönetimi sağladım, RxJS kullanarak reaktif programlama uyguladım ve WebSocket ile gerçek zamanlı veri akışı gerçekleştirdim. REST API’ler ile backend entegrasyonu yaptım ve önbellekleme yöntemleriyle performansı optimize ettim. DevExtreme ve AG Grid kullanarak veri tabloları, grafikler ve interaktif bileşenler geliştirdim. Duyarlı tasarım prensiplerine uygun olarak farklı ekran boyutlarına uyum sağlayan kullanıcı arayüzleri oluşturdum",
+    "extras": ["Angular", "Ionic", "NgRx", "RxJS", "REST API", "WebSocket", "Frontend Caching", "DevExtreme", "AG Grid", "Responsive Design"],
+    "id": "experience0",
+    "continueUrl": "https://www.kerzzpos.com/",
+    "order": "0",
+    "startTime": "10.2024",
+    "endTime": "Mevcut",
+    "position": "Önyüz Geliştirici"
+  },
   {
     "title": "Yazılım Geliştirici",
     "description": "2Ag Yazılım Hizmetleri'nde gönüllü staj sonrasında AR-GE departmanında Yazılım Uzmanı olarak çalışmaya başladım. Çalışma sürecim boyunca HTML, CSS, JavaScript, Angular, Devextreme, RxJs, NGX, C#, ABP Framework, Docker, RabbitMQ ve RedisInsight gibi teknolojilerle çalıştım. Frontend tarafında geliştirilen projeye özel UI/UX elementlerinin oluşturulması, responsive sayfa tasarımı, dinamik component oluşturulması, npm kütüphanelerinin oluşturulması, veritabanı (data-grid) tasarımı, RestAPI kullanımı, Docker kullanımı ve Linux kullanımında görev aldım. Backend tarafında ise geliştirilen projeye özel veritabanı oluşturulması, veritabanı ilişkileri, mimari tasarım standartları, mikroservis mimarisi ve RestAPI entegrasyonu görevlerinde yer aldım. Ayrıca, yeni teknolojilerin ve mimari modellerin araştırılması, mimari modellerin geliştirilmesi ve değiştirilmesinde de aktif rol aldım.",
@@ -112,7 +171,7 @@ const experienceDataTR: ExperienceCards[] = [
     "continueUrl": "https://www.2ag.com.tr",
     "order": "1",
     "startTime": "02.2024",
-    "endTime": "Mevcut",
+    "endTime": "10.2024",
     "position": "Yazılım Geliştirici"
   },
   {
@@ -141,6 +200,17 @@ const experienceDataTR: ExperienceCards[] = [
 
 const experienceDataEN = [
   {
+    "title": "Frontend Developer",
+    "description": "I developed web and mobile applications using Angular and Ionic at Kerzz POS. I implemented state management with NgRx, applied reactive programming with RxJS, and enabled real-time data streaming using WebSocket. I integrated with the backend through REST APIs and optimized performance with caching methods. I developed data tables, charts, and interactive components using DevExtreme and AG Grid. I created user interfaces that adapt to different screen sizes following responsive design principles.",
+    "extras": ["Angular", "Ionic", "NgRx", "RxJS", "REST API", "WebSocket", "Frontend Caching", "DevExtreme", "AG Grid", "Responsive Design"],
+    "id": "experience0",
+    "continueUrl": "https://www.kerzzpos.com/",
+    "order": "0",
+    "startTime": "10.2024",
+    "endTime": "Present",
+    "position": "Frontend Developer"
+  },
+  {
     "title": "Software Developer",
     "description": "After my voluntary internship at 2Ag Yazılım Hizmetleri, I started working as a Software Specialist in the R&D department. During my tenure, I worked with technologies such as HTML, CSS, JavaScript, Angular, Devextreme, RxJs, NGX, C#, ABP Framework, Docker, RabbitMQ, and RedisInsight. On the frontend, I was responsible for creating UI/UX elements specific to the project, designing responsive pages, creating dynamic components, developing npm libraries, designing data-grids, using RestAPI, Docker, and Linux. On the backend, I worked on creating project-specific databases, database relationships, architectural design standards, microservice architecture, and RestAPI integration. Additionally, I actively participated in researching new technologies and architectural models, developing, and modifying them.",
     "extras": ["HTML", "CSS", "JavaScript", "Angular", "Devextreme", "RxJs", "NGX", "C#", "ABP Framework", "Docker", "RabbitMQ", "RedisInsight"],
@@ -148,7 +218,7 @@ const experienceDataEN = [
     "continueUrl": "https://www.2ag.com.tr",
     "order": "1",
     "startTime": "02.2024",
-    "endTime": "Present",
+    "endTime": "10.2024",
     "position": "Software Developer"
   },
   {
@@ -176,9 +246,9 @@ const experienceDataEN = [
 ];
 
 
-const aboutMeTR = "Merhaba, ben <strong>Ergül Ferik</strong>. 2024 yılında <strong>Manisa Celal Bayar Üniversitesi Bilgisayar Mühendisliği (İngilizce)</strong> bölümünden 3.16 ortalama ile mezun oldum. Yazılım geliştirme alanında çeşitli staj ve iş tecrübelerine sahibim.<br><br> <strong>İthinka Yazılım Danışmanlık Hizmetleri</strong>'nde yaz dönemi stajı yaparak web mimarileri üzerine çalıştım. Ardından, <strong>2Ag Yazılım Hizmetleri</strong>'nde gönüllü stajyer olarak AR-GE departmanında görev aldım ve burada Yazılım Uzmanı olarak çalışmaya devam ettim. Bu süreçte, yeni teknolojilerin araştırılması ve uygulamalı projeler geliştirilmesi konularında derinlemesine deneyim kazandım.<br><br> <strong>Angular, HTML, CSS, JavaScript, C#, ABP Framework</strong> gibi çeşitli teknolojilerle çalışarak <strong>frontend ve backend</strong> geliştirme konusunda kendimi geliştirdim. Ayrıca, <strong>npm paketleri oluşturarak</strong> projelerime katkıda bulundum ve yazılım mimarileri üzerine çalışmalar yaptım. Takım çalışmasına yatkın, problem çözme becerileri gelişmiş ve sürekli öğrenmeye açık bir yazılım geliştiriciyim."
+const aboutMeTR = "Merhaba, ben <strong>Ergül Ferik</strong>. 2024 yılında <strong>Manisa Celal Bayar Üniversitesi Bilgisayar Mühendisliği (İngilizce)</strong> bölümünden 3.16 ortalama ile mezun oldum. Eğitim sürecimde çeşitli yazılım stajları ve iş deneyimleri edindim.<br><br> Yaz dönemi stajımı <strong>İthinka Yazılım Danışmanlık Hizmetleri</strong>'nde gerçekleştirerek web mimarileri üzerine çalıştım. Daha sonra, <strong>2Ag Yazılım Hizmetleri</strong>'nde gönüllü stajyer olarak AR-GE departmanında görev aldım ve burada Yazılım Uzmanı olarak çalışmaya devam ettim. Ardından, <strong>Kerzz POS</strong>'da Önyüz Geliştirici olarak çalışmaya başladım. Bu süreçte, yeni teknolojilerin araştırılması, yazılım mimarilerinin geliştirilmesi ve uygulanması konularında geniş çaplı deneyimler kazandım.<br><br> <strong>Angular, TypeScript, HTML, CSS, JavaScript, NPM, NgRx, RxJs</strong> gibi birçok teknoloji ile çalışarak <strong>frontend ve backend</strong> geliştirme alanlarında uzmanlaştım. Ayrıca, <strong>npm paketleri oluşturarak</strong> açık kaynak projelere katkıda bulundum ve yazılım mimarileri üzerine araştırmalar gerçekleştirdim. Takım çalışmasına yatkın, problem çözme becerileri gelişmiş ve sürekli öğrenmeye açık bir yazılım geliştiriciyim."
 
-const aboutMeEN = "Hello, I'm <strong>Ergül Ferik</strong>. I graduated from the <strong>Computer Engineering (English) department at Manisa Celal Bayar University</strong> in 2024 with a GPA of 3.16. I have various internship and work experiences in software development.<br><br> I completed a summer internship at <strong>İthinka Yazılım Danışmanlık Hizmetleri</strong>, working on web architectures. Then, I started working as a volunteer intern in the R&D department at <strong>2Ag Yazılım Hizmetleri</strong> and continued as a Software Specialist. During this period, I gained in-depth experience in researching new technologies and developing practical projects.<br><br> I have improved myself in <strong>frontend and backend</strong> development by working with various technologies such as <strong>Angular, HTML, CSS, JavaScript, C#, ABP Framework</strong>. Additionally, I contributed to my projects by creating <strong>npm packages</strong> and working on software architectures. I am a software developer with strong teamwork skills, problem-solving abilities, and a continuous learning mindset."
+const aboutMeEN = "Hello, I'm <strong>Ergül Ferik</strong>. I graduated from the <strong>Computer Engineering (English) department at Manisa Celal Bayar University</strong> in 2024 with a GPA of 3.16. During my studies, I gained valuable internship and work experiences in software development.<br><br> I completed a summer internship at <strong>İthinka Yazılım Danışmanlık Hizmetleri</strong>, where I worked on web architectures. Then, I joined <strong>2Ag Yazılım Hizmetleri</strong> as a volunteer intern in the R&D department and later continued as a Software Specialist. Subsequently, I started working as a Frontend Developer at <strong>Kerzz POS</strong>. Throughout this journey, I gained extensive experience in researching new technologies, developing, and implementing software architectures.<br><br> I have expertise in <strong>Angular, TypeScript, HTML, CSS, JavaScript, NPM, NgRx, RxJs</strong> and have improved myself in both <strong>frontend and backend</strong> development. Additionally, I contributed to open-source projects by creating <strong>npm packages</strong> and conducting research on software architectures. I am a software developer with strong teamwork skills, problem-solving abilities, and a continuous learning mindset."
 
 const aboutMeShortTR = "Gelişime açık ve her zaman öğrenmeye istekli biriyim. Öğrendiklerimi paylaşmak için kurduğum web sitesindesiniz."
 
