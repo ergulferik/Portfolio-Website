@@ -219,7 +219,7 @@ const experienceDataTR: ExperienceCards[] = [
   {
     "title": "Önyüz Geliştirici",
     "description": "Kerzz POS'ta Angular ve Ionic kullanarak web ve mobil uygulamalar geliştirdim. NgRx ile durum yönetimi sağladım, RxJS kullanarak reaktif programlama uyguladım ve WebSocket ile gerçek zamanlı veri akışı gerçekleştirdim. REST API’ler ile backend entegrasyonu yaptım ve önbellekleme yöntemleriyle performansı optimize ettim. DevExtreme ve AG Grid kullanarak veri tabloları, grafikler ve interaktif bileşenler geliştirdim. Duyarlı tasarım prensiplerine uygun olarak farklı ekran boyutlarına uyum sağlayan kullanıcı arayüzleri oluşturdum",
-    "extras": ["Angular", "Ionic", "NgRx", "RxJS", "REST API", "WebSocket", "Frontend Caching", "DevExtreme", "AG Grid", "Responsive Design"],
+    "extras": ["Angular", "React", "React Native", "Ionic", "NgRx", "RxJS", "REST API", "WebSocket", "DevExtreme", "AG Grid"],
     "id": "experience0",
     "continueUrl": "https://www.kerzzpos.com/",
     "order": "0",
@@ -266,7 +266,7 @@ const experienceDataEN = [
   {
     "title": "Frontend Developer",
     "description": "I developed web and mobile applications using Angular and Ionic at Kerzz POS. I implemented state management with NgRx, applied reactive programming with RxJS, and enabled real-time data streaming using WebSocket. I integrated with the backend through REST APIs and optimized performance with caching methods. I developed data tables, charts, and interactive components using DevExtreme and AG Grid. I created user interfaces that adapt to different screen sizes following responsive design principles.",
-    "extras": ["Angular", "Ionic", "NgRx", "RxJS", "REST API", "WebSocket", "Frontend Caching", "DevExtreme", "AG Grid", "Responsive Design"],
+    "extras": ["Angular", "React", "React Native", "Ionic", "NgRx", "RxJS", "REST API", "WebSocket", "DevExtreme", "AG Grid"],
     "id": "experience0",
     "continueUrl": "https://www.kerzzpos.com/",
     "order": "0",
