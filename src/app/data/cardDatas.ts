@@ -2,12 +2,44 @@ import { ExperienceCards, ProjectCard } from "../cards.model";
 
 const cardsTR: ProjectCard[] = [
   {
+    "title": "Hyundai Work Tracer",
+    "description": "Hyundai Elevator (İzmir) için çalışanların giriş-çıkış ve konum bilgilerinin takip edilebildiği bir işçi takip uygulaması geliştirdim. Kişisel verilerin korunmasına önem verilerek yalnızca yetkililerin denetimini kolaylaştırmak amacıyla tasarlanan uygulamanın ön yüzü Angular, arka yüzü NestJS ile geliştirilmiş olup, veritabanı olarak MongoDB kullanılmıştır.",
+    "extras": ["Angular", "NestJS", "MongoDB", "UI/UX", "Responsive Design"],
+    "id": "project10",
+    "continueUrl": "",
+    "order": "0"
+  },
+  {
+    "title": "Beltur",
+    "description": "İstanbul Büyükşehir Belediyesi'ne bağlı Beltur işletmeleri için vapur seyahatleri rezervasyonu, menü görüntüleme, Masterpass ile online ödeme ve duyuru yönetimi gibi özellikleri içeren kapsamlı bir mobil uygulamanın geliştirilmesinde görev aldım. Şirkete bağlı olarak uygulamanın sorumluluğunu üstlendim. Uygulamanın ön yüzü Ionic kullanılarak geliştirildi.",
+    "extras": ["Ionic", "Angular", "UI/UX", "Responsive Design", "Mobile"],
+    "id": "project0",
+    "continueUrl": "https://play.google.com/store/apps/details?id=app.orwi.beltur&hl=tr",
+    "order": "1"
+  },
+  {
+    "title": "Bigchefs",
+    "description": "Türkiye'nin önde gelen restoran zincirlerinden BigChefs için geliştirilen mobil uygulamanın yazım sürecinde proje sorumluluğu üstlendim. Menü görüntüleme, geri bildirim, kampanyalardan yararlanma ve sipariş oluşturma gibi özellikler sunan uygulamanın ön yüzü Ionic framework ile geliştirildi.",
+    "extras": ["Ionic", "Angular", "UI/UX", "Responsive Design", "Mobile"],
+    "id": "project11",
+    "continueUrl": "https://play.google.com/store/apps/details?id=bigchefs.app&hl=tr",
+    "order": "2"
+  },
+  {
+    "title": "Laika",
+    "description": "Laika adlı kafe için etkinliklerin yönetilebildiği, biletleme, menü görüntüleme ve rezervasyon işlemlerinin yapılabildiği bir web uygulaması geliştirdim. Ön yüz React, arka yüz NestJS ile geliştirildi; veritabanı olarak MongoDB kullanıldı.",
+    "extras": ["React", "NestJS", "MongoDB", "UI/UX", "Responsive Design"],
+    "id": "project12",
+    "continueUrl": "https://ergulferik.github.io/Laika-Web/",
+    "order": "3"
+  },
+  {
     "title": "Angulogic - Sidebar",
     "description": "@angulogic/ng-sidebar, Angular uygulamaları için geliştirilen, dinamik, etkileşimli ve yüksek düzeyde özelleştirilebilir bir kenar çubuğu bileşenidir. Kullanıcı deneyimini geliştirmek amacıyla iç içe geçmiş menüler, arama fonksiyonelliği, favori yönetimi, tema değiştirme, duyarlı (responsive) görüntüleme modları ve yeniden boyutlandırılabilir / otomatik konumlandırılabilir yapı gibi gelişmiş özellikler sunmaktadır.",
     "extras": ["Angular", "Npm", "UI/UX", "Responsive Design", "CSS"],
     "id": "project7",
     "continueUrl": "https://github.com/skarahan35/angulogic",
-    "order": "1"
+    "order": "4"
   },
   {
     "title": "Wave",
@@ -15,7 +47,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Angular", "NestJS", "WebSocket", "Real-time Tracking"],
     "id": "project8",
     "continueUrl": "https://github.com/ergulferik/wave",
-    "order": "2"
+    "order": "5"
   },
   {
     "title": "Spy",
@@ -23,7 +55,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Angular", "Ionic", "Web", "Mobile", "State Management"],
     "continueUrl":"https://ergulferik.github.io/spy/",
     "id": "project9",
-    "order": "3"
+    "order": "6"
   },
   {
     "title": "DarkChicken",
@@ -31,7 +63,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Angular", "Npm", "UI kit", "Datatable", "JavaScript", "HTML", "CSS"],
     "id": "project1",
     "continueUrl": "https://github.com/skarahan35/darkchicken",
-    "order": "4"
+    "order": "7"
   },
   {
     "title": "DC Toast",
@@ -39,7 +71,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Angular", "Npm", "JavaScript", "HTML", "CSS"],
     "id": "project2",
     "continueUrl": "https://www.npmjs.com/package/dc-toast-ng",
-    "order": "5"
+    "order": "8"
   },
   {
     "title": "AllScan",
@@ -47,7 +79,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["JavaScript", "HTML", "CSS", "Python", "FastAPI", "BeautifulSoup"],
     "id": "project3",
     "continueUrl": "https://github.com/ergulferik/All-Scan",
-    "order": "6"
+    "order": "9"
   },
   {
     "title": "Kütüphane Yönetim Uygulaması",
@@ -55,7 +87,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Angular", "HTML", "CSS", "JavaScript", "NGX", "C#", "ABP Framework"],
     "id": "project4",
     "continueUrl": "https://github.com/ergulferik/Virtual-Shelf-Browser",
-    "order": "7"
+    "order": "10"
   },
   {
     "title": "Apartman Yönetim Uygulaması",
@@ -63,7 +95,7 @@ const cardsTR: ProjectCard[] = [
     "extras": ["C#", ".NET Core", "WebSocket", "TCP/IP", "MVC"],
     "id": "project5",
     "continueUrl": "https://github.com/ergulferik/Apartment-Management-System",
-    "order": "8"
+    "order": "11"
   },
   {
     "title": "Web Sayfası Tercüme Uygulaması",
@@ -71,18 +103,50 @@ const cardsTR: ProjectCard[] = [
     "extras": ["Python", "Selenium", "BeautifulSoup", "Pandas", "Örümcek Mimarisi"],
     "id": "project6",
     "continueUrl": "https://github.com/ergulferik/Website-Translator",
-    "order": "9"
+    "order": "12"
   }
 ]
 
 const cardsEN = [
+  {
+    "title": "Hyundai Work Tracer",
+    "description": "I developed a worker tracking application for Hyundai Elevator (İzmir) that allows monitoring of employees' check-in/check-out times and location information. Designed with a strong emphasis on personal data protection, the application facilitates supervision exclusively for authorized personnel. The frontend was developed using Angular, the backend with NestJS, and MongoDB was used as the database.",
+    "extras": ["Angular", "NestJS", "MongoDB", "UI/UX", "Responsive Design"],
+    "id": "project10",
+    "continueUrl": "",
+    "order": "0"
+  },
+  {
+    "title": "Beltur",
+    "description": "I contributed to the development of a comprehensive mobile application for Beltur, a subsidiary of Istanbul Metropolitan Municipality, which included features such as ferry trip reservations, menu viewing, online payments via Masterpass, and announcement management. I assumed responsibility for the application on behalf of the company. The frontend of the application was developed using Ionic.",
+    "extras": ["Ionic", "Angular", "UI/UX", "Responsive Design", "Mobile"],
+    "id": "project0",
+    "continueUrl": "https://play.google.com/store/apps/details?id=app.orwi.beltur&hl=tr",
+    "order": "1"
+  },
+  {
+    "title": "Bigchefs",
+    "description": "I took on project responsibility during the development of a mobile application for BigChefs, one of Turkey's leading restaurant chains. The application, offering features such as menu browsing, feedback submission, campaign participation, and order creation, was developed using the Ionic framework for the frontend.",
+    "extras": ["Ionic", "Angular", "UI/UX", "Responsive Design", "Mobile"],
+    "id": "project11",
+    "continueUrl": "https://play.google.com/store/apps/details?id=bigchefs.app&hl=tr",
+    "order": "2"
+  },
+  {
+    "title": "Laika",
+    "description": "I developed a web application for Laika café that enables event management, ticketing, menu viewing, and reservations. The frontend was developed using React, the backend with NestJS, and MongoDB was used as the database.",
+    "extras": ["React", "NestJS", "MongoDB", "UI/UX", "Responsive Design"],
+    "id": "project12",
+    "continueUrl": "https://ergulferik.github.io/Laika-Web/",
+    "order": "3"
+  },
   {
     "title": "Angulogic - Sidebar",
     "description": "@angulogic/ng-sidebar is a dynamic, interactive, and highly customizable sidebar component developed for Angular applications. It enhances user experience by offering advanced features such as nested menus, search functionality, favorite management, theme switching, responsive display modes, and resizable/auto-positioning structures.",
     "extras": ["Angular", "Npm", "UI/UX", "Responsive Design", "CSS"],
     "id": "project7",
     "continueUrl": "https://github.com/skarahan35/angulogic",
-    "order": "1"
+    "order": "4"
   },
   {
     "title": "Wave",
@@ -90,7 +154,7 @@ const cardsEN = [
     "extras": ["Angular", "NestJS", "WebSocket", "Real-time Tracking"],
     "id": "project8",
     "continueUrl": "https://github.com/ergulferik/wave",
-    "order": "2"
+    "order": "5"
   },
   {
     "title": "Spy",
@@ -98,7 +162,7 @@ const cardsEN = [
     "extras": ["Angular", "Ionic", "Web", "Mobile", "State Management"],
     "continueUrl":"https://ergulferik.github.io/spy/",
     "id": "project9",
-    "order": "3"
+    "order": "6"
   },
   {
     "title": "DarkChicken",
@@ -106,7 +170,7 @@ const cardsEN = [
     "extras": ["Angular", "Npm", "UI kit", "Datatable", "JavaScript", "HTML", "CSS"],
     "id": "project1",
     "continueUrl": "https://github.com/skarahan35/darkchicken",
-    "order": "4"
+    "order": "7"
   },
   {
     "title": "DC Toast",
@@ -114,7 +178,7 @@ const cardsEN = [
     "extras": ["Angular", "Npm", "JavaScript", "HTML", "CSS"],
     "id": "project2",
     "continueUrl": "https://www.npmjs.com/package/dc-toast-ng",
-    "order": "5"
+    "order": "8"
   },
   {
     "title": "AllScan",
@@ -122,7 +186,7 @@ const cardsEN = [
     "extras": ["JavaScript", "HTML", "CSS", "Python", "FastAPI", "BeautifulSoup"],
     "id": "project3",
     "continueUrl": "https://github.com/ergulferik/All-Scan",
-    "order": "6"
+    "order": "9"
   },
   {
     "title": "Virtual Shelf Browser",
@@ -130,7 +194,7 @@ const cardsEN = [
     "extras": ["Angular", "HTML", "CSS", "JavaScript", "NGX", "C#", "ABP Framework", "MSSQL"],
     "id": "project4",
     "continueUrl": "https://github.com/ergulferik/Virtual-Shelf-Browser",
-    "order": "7"
+    "order": "10"
   },
   {
     "title": "Apartment Management Application",
@@ -138,7 +202,7 @@ const cardsEN = [
     "extras": ["C#", ".NET Core", "WebSocket", "TCP/IP", "MVC"],
     "id": "project5",
     "continueUrl": "https://github.com/ergulferik/Apartment-Management-System",
-    "order": "8"
+    "order": "11"
   },
   {
     "title": "Website Translation Application",
@@ -146,7 +210,7 @@ const cardsEN = [
     "extras": ["Python", "Selenium", "BeautifulSoup", "Pandas", "Spider Architecture"],
     "id": "project6",
     "continueUrl": "https://github.com/ergulferik/Website-Translator",
-    "order": "9"
+    "order": "12"
   }
 ];
 
@@ -160,7 +224,7 @@ const experienceDataTR: ExperienceCards[] = [
     "continueUrl": "https://www.kerzzpos.com/",
     "order": "0",
     "startTime": "10.2024",
-    "endTime": "Mevcut",
+    "endTime": "09.2025",
     "position": "Önyüz Geliştirici"
   },
   {
@@ -207,7 +271,7 @@ const experienceDataEN = [
     "continueUrl": "https://www.kerzzpos.com/",
     "order": "0",
     "startTime": "10.2024",
-    "endTime": "Present",
+    "endTime": "09.2025",
     "position": "Frontend Developer"
   },
   {
